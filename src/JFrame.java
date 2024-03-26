@@ -32,9 +32,9 @@ public class JFrame extends javax.swing.JFrame {
 
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jButton5 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        reset_jButton = new javax.swing.JButton();
+        quarterly_jButton = new javax.swing.JButton();
+        spanish_jButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -45,35 +45,45 @@ public class JFrame extends javax.swing.JFrame {
 
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        jButton5.setBackground(new java.awt.Color(38, 54, 105));
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Reset");
-        jButton5.setMargin(new java.awt.Insets(6, 26, 6, 26));
+        reset_jButton.setBackground(new java.awt.Color(38, 54, 105));
+        reset_jButton.setForeground(new java.awt.Color(255, 255, 255));
+        reset_jButton.setText("Reset");
+        reset_jButton.setMargin(new java.awt.Insets(6, 26, 6, 26));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(680, -260, 0, 0);
-        jPanel1.add(jButton5, gridBagConstraints);
+        jPanel1.add(reset_jButton, gridBagConstraints);
 
-        jButton4.setBackground(new java.awt.Color(38, 54, 105));
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Quarterly");
-        jButton4.setMargin(new java.awt.Insets(6, 23, 6, 23));
+        quarterly_jButton.setBackground(new java.awt.Color(38, 54, 105));
+        quarterly_jButton.setForeground(new java.awt.Color(255, 255, 255));
+        quarterly_jButton.setText("Quarterly");
+        quarterly_jButton.setMargin(new java.awt.Insets(6, 23, 6, 23));
+        quarterly_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quarterly_jButtonActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(680, 0, 0, 0);
-        jPanel1.add(jButton4, gridBagConstraints);
+        jPanel1.add(quarterly_jButton, gridBagConstraints);
 
-        jButton3.setBackground(new java.awt.Color(38, 54, 105));
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Español");
-        jButton3.setMargin(new java.awt.Insets(6, 23, 6, 23));
+        spanish_jButton.setBackground(new java.awt.Color(38, 54, 105));
+        spanish_jButton.setForeground(new java.awt.Color(255, 255, 255));
+        spanish_jButton.setText("Español");
+        spanish_jButton.setMargin(new java.awt.Insets(6, 23, 6, 23));
+        spanish_jButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spanish_jButtonActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(680, 260, 0, 0);
-        jPanel1.add(jButton3, gridBagConstraints);
+        jPanel1.add(spanish_jButton, gridBagConstraints);
 
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
@@ -92,6 +102,14 @@ public class JFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void quarterly_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quarterly_jButtonActionPerformed
+        new Large_Leak_Frame_Quartly().setVisible(true);
+    }//GEN-LAST:event_quarterly_jButtonActionPerformed
+
+    private void spanish_jButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spanish_jButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spanish_jButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,11 +148,11 @@ public class JFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JButton quarterly_jButton;
+    private javax.swing.JButton reset_jButton;
+    private javax.swing.JButton spanish_jButton;
     // End of variables declaration//GEN-END:variables
 }

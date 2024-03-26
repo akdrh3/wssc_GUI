@@ -89,7 +89,7 @@ public class Small_Leak_Frame_Quarterly extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        new Small_Leak_Frame_Monthly().setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**

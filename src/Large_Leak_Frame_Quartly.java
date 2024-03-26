@@ -1,3 +1,6 @@
+
+import java.util.HashSet;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -88,7 +91,8 @@ public class Large_Leak_Frame_Quartly extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
+        new JFrame().setVisible(true);
+        
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
